@@ -102,10 +102,13 @@ def parse_args():
     parser.add_argument('phrase', action='store', nargs='+', const=None, type=str, choices=None, \
                         help="phrase that you want to know the definition.", \
                         metavar=None)
-    parser.add_argument('-f', '--force_index', action='store_true', help='re-create index file.')
+    parser.add_argument('-f', '--force_index', action='store_true', 
+                        help='re-create index file.')
     group = parser.add_mutually_exclusive_group()
-    group.add_argument('-m', '--more', action='store_true', help='show  more result that starts with the given phrase + white space.')
-    group.add_argument('-a', '--all', action='store_true', help='show all result that starts with the given phrase.')
+    group.add_argument('-m', '--more', action='store_true', 
+                        help='show  more result that starts with the given phrase + white space.')
+    group.add_argument('-a', '--all', action='store_true', 
+                        help='show all result that starts with the given phrase.')
 
     return parser.parse_args()
 
