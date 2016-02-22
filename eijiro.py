@@ -99,8 +99,8 @@ class Eijiro:
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Search the given phrase from the Eijiro text file.')
-    parser.add_argument('phrase', action='store', nargs='+', const=None, type=str, choices=None, \
-                        help="phrase that you want to know the definition.", \
+    parser.add_argument('phrase', action='store', nargs='+', const=None, type=str, choices=None,
+                        help="phrase that you want to know the definition.",
                         metavar=None)
     parser.add_argument('-f', '--force_index', action='store_true', 
                         help='re-create index file.')
